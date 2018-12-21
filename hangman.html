@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <script src="hangman.js"></script>
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<h1>Hangman</h1>
+<h2>
+<select id="category" onchange="hangman()">
+    <option value="0">Select Category</option>
+    <option value="1">Animals</option>
+    <option value="2">Countries</option>
+    <option value="3">Fruits</option>
+    <option value="4">States</option>
+    <option value="5">Candy</option>
+    <option value="6" >School Subjects</option>
+</select>
+</h2>
+<h3>
+    <div id="guess1">
+<input type="text" id="guess"maxlength="1" size="1">
+    </div>
+<br>
+<div id="button1"><button onclick="startGame()" class="w3-container w3-white w3-hover-black
+w3-border w3-border-white w3-round">Go!</button>
+</div>
+</h3>
+<h4>
+<div id = "button"></div>
+<div id="error"></div>
+<div id="num"></div>
+<div id="word"></div>
+<div id="correct"></div>
+<div id="left"></div>
+<div id="letters"></div>
+<div id="won"></div>
+<div id="lost"></div>
+    <br>
+<img id="images">
+</h4>
+</body>
+</html>
