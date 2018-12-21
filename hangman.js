@@ -149,6 +149,7 @@ function endGame() {
     lives=6;
     spaces = "";
     guessLetters="";
+    document.getElementById("error").innerHTML="";
     document.getElementById("guess1").style.display="block";
     document.getElementById("left").innerHTML = "Guesses Left: " + lives;
     document.getElementById("word").innerHTML = spaces;
